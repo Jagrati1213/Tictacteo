@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Dtic tac teoo</title>
+</head>
+
+<body onload="start()">
+  <!-- tic-tac-teo -->
+    <h1>Tic Tac Teo</h1>
+
+    <!-- turning Msg -->
+    <div class="turn">
+       <h3><span></span></h3>
+    </div>
+
+<!-- container -->
+    <div class="wrapper">
+
+      <!-- player -X  -->
+      <div class="player-x">
+          <!-- X-sign -->
+       <div class="x-sign">
+         X
+       </div>
+       <!-- player-Details -->
+       <div class="playerX-box">
+        <img src="./images.png" alt="" class="image-x">
+        <h3>siddhu</h3>
+       </div>
+       <!-- counter -X -->
+       <!-- <div class="x-count">
+         <span>0</span> 
+      </div> -->
+      </div>
+
+      <!-- board box -->
+        <div class="box">
+            <div id="0" class="b-0"><span class="box-text"></span></div>
+            <div id="1" class="b-1"><span class="box-text"></span></div>
+            <div id="2" class="b-2"><span class="box-text"></span></div>
+            <div id="3" class="b-3"><span class="box-text"></span></div>
+            <div id="4" class="b-4"><span class="box-text"></span></div>
+            <div id="5" class="b-5"><span class="box-text"></span></div>
+            <div id="6" class="b-6"><span class="box-text"></span></div>
+            <div id="7" class="b-7"><span class="box-text"></span></div>
+            <div id="8" class="b-8"><span class="box-text"></span></div>
+        </div> 
+
+        <!-- player - O -->
+        <div class="player-o">
+          <!-- O-sign  -->
+          <div class="o-sign">
+            O
+          </div>
+          <!-- player - O Details -->
+          <div class="playerO-box">
+           <img src="./images.png" alt="" class="image-o">
+           <h3>jaggu</h3>
+          </div>
+          <!-- counter-O -->
+          <!-- <div class="o-count">
+             <span>0</span> 
+          </div> -->
+         </div>
+    </div>
+
+  <div id="count-box">
+    <button onclick="restart()">Restart</button>
+  </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
