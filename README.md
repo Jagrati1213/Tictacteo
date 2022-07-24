@@ -7,7 +7,7 @@ It was fun game, where you can play with your friend.
 ### FrameWork ###
 - Bootstrap
 - MD Bootstrap
-- Font Awesome\
+- Font Awesome
 ## ##
 **I learnt conditions applying and events**\
 *You Can check out the [Tictacteo](https://Jagrati1213.github.io/Tictacteo)*
