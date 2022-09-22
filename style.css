@@ -3,7 +3,7 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 body{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -168,7 +168,7 @@ button:hover{
     }
     .wrapper{
         flex-direction: column;
-        height: fit-content;
+        height:auto;
     }
     .player-x,.player-o{
         flex-direction: column;
@@ -203,9 +203,6 @@ button:hover{
 } 
 /* for tablet */
 @media only  screen and (max-width:768px){
-    body{
-      min-height: 100vh;
-    }
     h1{
         font-size: 36px;
     }
