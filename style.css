@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Seymour+One&family=Ubuntu:wght@300&display=swap');
-
-
 *,::after,::before{
     margin: 0;padding: 0;box-sizing: border-box;
 }
-
 body{
     height: 100vh;
     display: flex;
@@ -15,66 +12,52 @@ body{
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
 }
-
 /* ========== ttt =========== */
-
 h1{
     color: yellow;
     font-size: 3rem;
 }
-
-/* ========= Container box  ==== */
-
+/* ==== Container box  ==== */
 .wrapper{
     height: 60vh;
     width: 95%;
     display: flex;
     justify-content: space-evenly;
 }
-
-/* ========= player Sign  ===== */
-
+/* ===== player Sign  ===== */
 .x-sign,.o-sign {
       font-size: 7rem;
       color: #575846;
       font-weight: bold;
       transition: all  .3s ease-in-out;
 }
-
 .sign-chnge{
     color: #e9f537;
 }
 .img-chnge{
-    background: #e7f071
+    background: #747c01;
 }
 /* ========= player Details ==== */
-
 .player-x,.player-o{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .playerX-box,.playerO-box{
     width: 100%;
-    position: relative;
-
+    display: flex;
+    align-items: center;
 }
-
 .image-x,.image-o{
     width: 30%;
     border-radius: 50%;
     border: 6px solid #d3d3d3a9;
     transition: all  .3s ease-in-out;
 }
-
 .playerX-box h3,.playerO-box h3{
     text-align: center;
     background:#101010;
-    position: absolute;
-    top: 10px;
-    right: 4px;
     height: 3pc;
     width: 66%;
     border-radius: 30px;
@@ -82,9 +65,7 @@ h1{
     color: #e9f537;
     border: 3px solid #d3d3d3a9;
 }
-
-/* ===========counter ========= */
-
+/* ====== counter ====== */
 .x-count,.o-count{
     font-size: 18px;
     margin-top: 2pc;
@@ -94,27 +75,22 @@ h1{
 .x-count span,.o-count span{
     font-size: 2rem;}
 
-
-/* =========== Turning Msg ========= */
-
+/* ===== Turning Msg ===== */
 .turn{
-    width: 33%;
-    height: 6vh;
+    width: 100%;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+    margin-bottom: 2rem;
 }
 .turn h3{
-    width: 31%;
-    height: 50px;
-    border: none;
-    outline: none;
     font-size: 2rem;
     color:rgba(211, 211, 211, 0.753);
     text-align: center;
+    padding: 12px 0;
 }
-/* ============== Board Box ========= */
-
+/* ===== Board Box ===== */
 .box{
     width: 45%;
     height: 60vh;
@@ -145,174 +121,117 @@ h1{
 .box .b-6,.box .b-7,.box .b-8{
     border-bottom: none;
 }
-/* ========== restart ========== */
-
+/* =====  restart ===== */
 #count-box{
     width: 30%;
     height: 9vh;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-
 }
 button{
     width: 30%;
     height: 5vh;
     padding: 0rem 0rem;
+    border-radius: 12px;
     font-size: 17px;
-    color:#95a003; 
+    color:#101010; 
     text-align: center;
-    background: transparent;
+    background: #95a003;
     border: none;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 button:hover{
     color: #e9f537;
+    background: #37382e;
 }
 
-/* ==========Media Queries =========== */
-
-/* for tablet */
-@media only  screen and (max-width:768px){
-    body{
-    min-height: 100vh;
-    }
-    h1{
-        font-size: 36px;
-    }
-    .turn{
-        width: 100%;
-    }
-    .turn h3{
-        width: auto;
-        font-size: 25px;
-    }
-    .wrapper{
-        min-width: 98%;
-    }
-    .player-x, .player-o{
-        width: 16%;
-    }
-    .x-sign, .o-sign{
-        font-size: 40px;
-    }
-    .playerX-box, .playerO-box{
-        height: auto;
-    }
-    .playerX-box h3, .playerO-box h3{
-        padding-top: 7px;
-        top: -1px;
-        font-size: 12px;
-        height: 38px;
-    }
-    .box {
-        width: 58%;
-
-        height: 60vh;
-    }
-    .box div{
-        font-size: 24px;
-    }
-}
-
-/* for redmi  */
-@media only screen and (max-width:425px){
+/* for desktop  */
+@media only screen and (max-width:1200px){
     h1 {
-    font-size: 27px;
-    margin: 12px 0;
+        font-size: 40px;
+        margin: 12px 0;
     }
     .turn h3 {
-        font-size: 20px;
         padding: 12px 0;
+        margin-bottom: 2rem;
     }
-    .wrapper{
-        flex-direction: column;
-        min-height: 68vh;
-    }
-    .player-x,.player-o{
-        flex-direction: row;
-        justify-content: space-evenly;
-        height: 44px;
-        width: 100%;
-        order: 0;
-    }
-    .x-sign, .o-sign {
-        font-size: 28px;
-        width: 39%;
-        text-align: center;
-    }
-    .image-x, .image-o {
-        width: 16%;
-    }
-    .playerX-box,.playerO-box{
-        width: 56%;
-    }
-    .image-x, .image-o {
-            width: 16%;
-    }
-    .playerO-box h3 ,.playerX-box h3{
-        width: 51%;
-        right: 76px;
-        height: 40px;
-        font-size: 13px;
-        top: 1px;
-    }
-    .box {
+    .box{
+        height: fit-content;
         width: 99%;
-        height: 47vh;
         margin: 23px 0;
     }
     .box div {
         height: 14vh;
         font-size: 29px;
     }
+    .wrapper{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .player-x,.player-o{
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        order: 0;
+    }
+    .x-sign, .o-sign {
+        font-size: 50px;
+        width: fit-content;
+        text-align: center;
+    }
+    .playerX-box,.playerO-box{
+        width: fit-content;
+        justify-content: center;
+    }
+    .image-x, .image-o {
+        width: 25%;
+    }
+    .playerO-box h3 ,.playerX-box h3{
+        height: 40px;
+        font-size: 16px;
+        top: 1px;
+    }
     #count-box {
         align-items: center;
         width: 96%;
+        margin-top: 2rem;
     }
 
 } 
-
+/* for tablet */
+@media only  screen and (max-width:768px){
+    body{
+      min-height: 100vh;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .wrapper{
+        width: 98%;
+    }
+    .box div{
+        font-size: 24px;
+    }
+}
 /* for smaller */
 @media only screen and (max-width:375px){
-    .turn{
-        width: 100%;
-    }
-    .box{
-        height: 42vh
-    }
     .box div{
         height: 12vh;
         font-size: 24px;
         padding-top: 2rem;
     }
-    .x-sign,.o-sign{
-        width: 20%;
-    }
-    .playerX-box ,.playerO-box{
-        width: 50%;
-    }
     .playerO-box h3, .playerX-box h3 {
         width: 52%;
-        right:51px;
-        top: -1px;
         height: 33px;
-        font-size: 11px;
+        font-size: 12px;
     }
-    .image-x, .image-o {
-        width: 16%;
+    .turn h3{
+        font-size: 25px;
     }
-}
-
-/* for smaller */
-@media only screen and (min-width:320px){
-    .playerX-box, .playerO-box {
-        width: 62%;
-    }
-    .box div {
-        font-size: 20px;
-    }
-    .turn{
-        width: 100%;
+    button {
+        width: 70%;
     }
 }

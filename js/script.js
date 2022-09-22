@@ -20,7 +20,6 @@ turnMsg.innerHTML = `${current_player} 's Move`;
 let audioTurn = new Audio("ting.mp3");
 let gameover = new Audio("gameover.mp3");
 
-
 //change the turn...
 function chnageTurn() {
 
@@ -125,42 +124,9 @@ function start() {
 };
 //  restart the game...
 function restart() {
-
     document.body.onload(start());
     console.log("done")
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // inputs.forEach(element => {
 //     element.addEventListener("click", () => {
 //         console.log(inputs);
@@ -178,4 +144,3 @@ function restart() {
 
 //     });
 // });
-
