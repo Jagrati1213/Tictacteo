@@ -1,4 +1,4 @@
-# Tictacteo -v.2
+# Tictacteo -v.1
 It was fun game, where you can play with your friend.
 ## Used language ##
 - HTML 
