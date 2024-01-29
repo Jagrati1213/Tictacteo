@@ -1,7 +1,4 @@
 # Tic Tac Toe App
-
-## Overview :
-
 This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript. It's a classic two-player game where players take turns marking their symbol (X or O) in a 3x3 grid. The objective is to achieve three of your symbols in a row horizontally, vertically, or diagonally before your opponent.
 [Tictacteo](https://Jagrati1213.github.io/Tictacteo)
 
