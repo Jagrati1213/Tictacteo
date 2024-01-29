@@ -32,11 +32,7 @@ This is a simple Tic Tac Toe game built using HTML, CSS, and JavaScript. It's a 
 - Clear indication of the current player's turn.
 - End-of-game messages indicating the winner or a tie.
 
-### Project Screenshots :
-https://user-images.githubusercontent.com/85276293/194698355-15299d2d-a81b-4079-a051-265c44863aa2.mp4
-![image](https://github.com/Jagrati1213/Tictacteo/assets/85276293/4ee772ae-e31d-43a3-916f-3d030bdde775)
-
-
 Have fun playing Tic Tac Toe!
 
-
+### Project Screenshots :
+https://user-images.githubusercontent.com/85276293/194698355-15299d2d-a81b-4079-a051-265c44863aa2.mp4
